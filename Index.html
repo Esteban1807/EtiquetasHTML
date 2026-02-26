@@ -8,9 +8,14 @@
 </head>
 <body>
     <header>
-    <h1>Blog Educativo de Etiquetas HTML</h1>   
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ54sXyKwsmjrUrj3qu341VA9kIGzPnsqU1sw&s" alt="html-img">
-
+        <div class="encabezado">
+        <img src="./Assets/logo-sena-.png"
+     alt="Logo SENA"
+     class="logo">
+    <h1 id="title">Blog Educativo de Etiquetas HTML</h1>
+     </div>  
+    <hr>
+    
     <nav>
         <a href="#estructurales">Estructurales</a>
         <a href="#texto">Texto</a>
@@ -19,6 +24,9 @@
         <a href="#tablas">Tablas</a>
         <a href="#Multimedia">Multimedia</a>
     </nav>
+    <hr>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrD8d0U_P6ljku70Bef-bj2zwlU9coOd4Cbw&s" alt="html-img">
+
     
     <p id="intro">En este blog vamos a evidenciar algunas de las etiquetas que tenemos en HTML</p>
    
@@ -30,33 +38,58 @@
 
     <article>
         <ul>
+             <!-- <html> -->
+            <li>&lt;html&gt;</li>
+            <p><strong>Definición:</strong> Define el inicio y final de un documento HTML.</p>
+            <p><strong>Sintaxis:</strong></p>
+            <pre>&lt;html&gt;Contenido&lt;/html&gt;</pre>
+            <p><strong>Uso adecuado:</strong> Se utiliza como el contenedor principal de la página. </p>
+            <p><strong>Buenas prácticas:</strong> No debe faltar, ya que es esencial para estructurar el contenido de una página web.</p>
+
+
             <!-- <header> -->
-            <li><h3>&lt;header&gt;</h3></li>
+            <li>&lt;header&gt;</li>
             <p><strong>Definición:</strong> Define la cabecera de una página o sección.</p>
             <p><strong>Sintaxis:</strong></p>
             <pre>&lt;header&gt;Contenido&lt;/header&gt;</pre>
             <p><strong>Uso adecuado:</strong> Se usa para títulos o menús.</p>
             <p><strong>Buenas prácticas:</strong> No usarlo solo para decorar.</p>
+
+            <!-- <body> -->
+            <li>&lt;body&gt;</li>
+            <p><strong>Definición:</strong> Define el contenido visible de la página web.</p>
+            <p><strong>Sintaxis:</strong></p>
+            <pre>&lt;body&gt;Contenido visible de la pagina web&lt;/body&gt;</pre>
+            <p><strong>Uso adecuado:</strong> Se usa para contener todo el contenido que se muestra al usuario, como textos, imágenes, formularios, etc.</p>
+            <p><strong>Buenas prácticas:</strong> No debe contener elementos fuera del contenido principal de la página.</p>
         </ul>
     </article>
     <hr>
         
         
 
-        </section id="Texto">
-         <h2>Etiquetas de Texto</h2>
-        
-         <article>
-            <ul>
-                <li><h3>&lt;p&gt;</h3></li>
-                <p><strong>Definición:</strong> Define un párrafo.</p>
-                <p><strong>Ejemplo:</strong></p>
-                <pre>&lt;p&gt;Este es un párrafo&lt;/p&gt;</pre>
-                <p>Resultado:</p>
-                <p>Este es un párrafo</p>
-            </ul>
-        
-         </article>
+    </section id="Texto">
+        <h2>Etiquetas de Texto</h2>
+    
+        <article>
+        <ul>
+                <!-- <p > -->
+            <li>&lt;p&gt;</li>
+            <p><strong>Definición:</strong> Define un párrafo de texto. </p>
+            <p><strong>Sintaxis:</strong></p>
+            <pre>&lt;p&gt;Texto del parrafo&lt;/p&gt;</pre>
+            <p><strong>Uso adecuado:</strong> Para contener y mostrar bloques de texto en una página web.</p>
+            <p><strong>Buenas prácticas:</strong> Evitar usarlo para otros elementos no relacionados con texto.</p>
+
+            <li>&lt;p&gt;</li>
+            <p><strong>Definición:</strong> Define un párrafo.</p>
+            <p><strong>Ejemplo:</strong></p>
+            <pre>&lt;p&gt;Este es un párrafo&lt;/p&gt;</pre>
+            <p>Resultado:</p>
+            <p>Este es un párrafo</p>
+        </ul>
+    
+        </article>
     <hr>
 
     </section>
