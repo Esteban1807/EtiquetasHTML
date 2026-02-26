@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Educativo - Etiquetas HTML</title>
+    <link rel="stylesheet" href="./Style/Style.css">
+</head>
+<body>
+    <header>
+    <h1>Blog Educativo de Etiquetas HTML</h1>   
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ54sXyKwsmjrUrj3qu341VA9kIGzPnsqU1sw&s" alt="html-img">
+
+    <nav>
+        <a href="#estructurales">Estructurales</a>
+        <a href="#texto">Texto</a>
+        <a href="#listas">Listas</a>
+        <a href="#formularios">Formularios</a>
+        <a href="#tablas">Tablas</a>
+        <a href="#Multimedia">Multimedia</a>
+    </nav>
+    
+    <p id="intro">En este blog vamos a evidenciar algunas de las etiquetas que tenemos en HTML</p>
+   
+    </header>
+
+    <main>
+        <section id="Estructurales">
+            <h2>Etiquetas Estructurales</h2>
+
+    <article>
+        <ul>
+            <!-- <header> -->
+            <li><h3>&lt;header&gt;</h3></li>
+            <p><strong>Definición:</strong> Define la cabecera de una página o sección.</p>
+            <p><strong>Sintaxis:</strong></p>
+            <pre>&lt;header&gt;Contenido&lt;/header&gt;</pre>
+            <p><strong>Uso adecuado:</strong> Se usa para títulos o menús.</p>
+            <p><strong>Buenas prácticas:</strong> No usarlo solo para decorar.</p>
+        </ul>
+    </article>
+    <hr>
+        
+        
+
+        </section id="Texto">
+         <h2>Etiquetas de Texto</h2>
+        
+         <article>
+            <ul>
+                <li><h3>&lt;p&gt;</h3></li>
+                <p><strong>Definición:</strong> Define un párrafo.</p>
+                <p><strong>Ejemplo:</strong></p>
+                <pre>&lt;p&gt;Este es un párrafo&lt;/p&gt;</pre>
+                <p>Resultado:</p>
+                <p>Este es un párrafo</p>
+            </ul>
+        
+         </article>
+    <hr>
+
+    </section>
+    <section id="listas">
+    <h2>Listas</h2>
+
+    <article>
+        <h3>&lt;ul&gt;</h3>
+        <p><strong>Definición:</strong> Lista desordenada.</p>
+        <pre>
+&lt;ul&gt;
+   &lt;li&gt;Elemento 1&lt;/li&gt;
+   &lt;li&gt;Elemento 2&lt;/li&gt;
+&lt;/ul&gt;
+        </pre>
+
+        <ul>
+            <li>Elemento 1</li>
+            <li>Elemento 2</li>
+        </ul>
+    </article>
+
+</section>
+
+<section id="formularios">
+    <h2>Formulario</h2>
+
+    <form>
+        <fieldset>
+            <legend>Contacto</legend>
+
+            <label>Nombre:</label>
+            <input type="text" required><br><br>
+
+            <label>Email:</label>
+            <input type="email" required><br><br>
+
+            <label>Mensaje:</label>
+            <textarea></textarea><br><br>
+
+            <button type="submit">Enviar</button>
+        </fieldset>
+    </form>
+
+</section>
+
+<section id="tablas">
+    <h2>Tablas</h2>
+
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Etiqueta</th>
+                <th>Función</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>&lt;table&gt;</td>
+                <td>Crear tabla</td>
+            </tr>
+        </tbody>
+    </table>
+
+</section>
+
+<section id="multimedia">
+    <h2>Multimedia</h2>
+
+    <img src="https://via.placeholder.com/200" alt="Ejemplo imagen">
+
+    <audio controls>
+        <source src="audio.mp3" type="audio/mpeg">
+    </audio>
+
+</section>
+    </main>
+
+    <footer>
+        <p> Blog Educativo de Etiquetas HTML</p>
+        </footer>
+        
+
+</body>
+</html>
