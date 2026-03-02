@@ -6,111 +6,105 @@
     <title>Blog Educativo - Etiquetas HTML</title>
     <link rel="stylesheet" href="./Style/Style.css">
 </head>
+
 <body>
-    <header>
-        <div class="encabezado">
-        <img src="./Assets/logo-sena-.png"
-     alt="Logo SENA"
-     class="logo">
-    <h1 id="title">Blog Educativo de Etiquetas HTML</h1>
-     </div>  
-    <hr>
-    
+
+
+<button id="btnArriba">↑</button>
+
+<header>
+    <div class="encabezado">
+        <img src="imagen sena.png" alt="Logo SENA" class="logo">
+        <h1 id="title">Blog Educativo de Etiquetas HTML</h1>
+    </div>
+
+    <button id="modoOscuro">Modo Oscuro</button>
+
     <nav>
         <a href="#estructurales">Estructurales</a>
         <a href="#texto">Texto</a>
         <a href="#listas">Listas</a>
         <a href="#formularios">Formularios</a>
         <a href="#tablas">Tablas</a>
-        <a href="#Multimedia">Multimedia</a>
+        <a href="#multimedia">Multimedia</a>
     </nav>
-    <hr>
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrD8d0U_P6ljku70Bef-bj2zwlU9coOd4Cbw&s" alt="html-img">
 
-    
-    <p id="intro">En este blog vamos a evidenciar algunas de las etiquetas que tenemos en HTML</p>
-   
-    </header>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrD8d0U_P6ljku70Bef-bj2zwlU9coOd4Cbw&s" 
+         alt="Imagen HTML" width="200">
 
-    <main>
-        <section id="Estructurales">
-            <h2>Etiquetas Estructurales</h2>
+    <p id="intro">
+        En este blog vamos a evidenciar algunas de las etiquetas más importantes que tenemos en HTML,
+        organizadas por categorías para facilitar su comprensión.
+    </p>
+
+</header>
+
+<main>
+
+
+<section id="estructurales">
+    <h2>Etiquetas Estructurales</h2>
 
     <article>
         <ul>
-             <!-- <html> -->
             <li>&lt;html&gt;</li>
             <p><strong>Definición:</strong> Define el inicio y final de un documento HTML.</p>
-            <p><strong>Sintaxis:</strong></p>
             <pre>&lt;html&gt;Contenido&lt;/html&gt;</pre>
-            <p><strong>Uso adecuado:</strong> Se utiliza como el contenedor principal de la página. </p>
-            <p><strong>Buenas prácticas:</strong> No debe faltar, ya que es esencial para estructurar el contenido de una página web.</p>
 
-
-            <!-- <header> -->
             <li>&lt;header&gt;</li>
             <p><strong>Definición:</strong> Define la cabecera de una página o sección.</p>
-            <p><strong>Sintaxis:</strong></p>
             <pre>&lt;header&gt;Contenido&lt;/header&gt;</pre>
-            <p><strong>Uso adecuado:</strong> Se usa para títulos o menús.</p>
-            <p><strong>Buenas prácticas:</strong> No usarlo solo para decorar.</p>
 
-            <!-- <body> -->
             <li>&lt;body&gt;</li>
-            <p><strong>Definición:</strong> Define el contenido visible de la página web.</p>
-            <p><strong>Sintaxis:</strong></p>
-            <pre>&lt;body&gt;Contenido visible de la pagina web&lt;/body&gt;</pre>
-            <p><strong>Uso adecuado:</strong> Se usa para contener todo el contenido que se muestra al usuario, como textos, imágenes, formularios, etc.</p>
-            <p><strong>Buenas prácticas:</strong> No debe contener elementos fuera del contenido principal de la página.</p>
+            <p><strong>Definición:</strong> Contiene todo el contenido visible.</p>
+            <pre>&lt;body&gt;Contenido visible&lt;/body&gt;</pre>
 
-            <!-- <title> -->
-            <li>&lt;title&gt;</li>
-            <p><strong>Definición:</strong> Define el título de la página que aparece en la barra del navegador o en las pestañas.</p>
-            <p><strong>Sintaxis:</strong></p>
-            <pre>&lt;title&gt;Nombre de la página&lt;/title&gt;</pre>
-            <p><strong>Uso adecuado:</strong> Se usa para establecer el nombre de la página en el navegador.</p>
-            <p><strong>Buenas prácticas:</strong> Debe ser claro y descriptivo, indicando el tema de la página o el contenido que contiene.</p>
+            <li>&lt;main&gt;</li>
+            <p><strong>Definición:</strong> Contenido principal del documento.</p>
+            <pre>&lt;main&gt;Contenido principal&lt;/main&gt;</pre>
+
+            <li>&lt;footer&gt;</li>
+            <p><strong>Definición:</strong> Pie de página.</p>
+            <pre>&lt;footer&gt;Pie&lt;/footer&gt;</pre>
         </ul>
     </article>
-    <hr>
-        
-        
+</section>
 
-    </section id="Texto">
-        <h2>Etiquetas de Texto</h2>
-    
-        <article>
+
+<section id="texto">
+    <h2>Etiquetas de Texto</h2>
+
+    <article>
         <ul>
-                <!-- <p > -->
-            <li>&lt;p&gt;</li>
-            <p><strong>Definición:</strong> Define un párrafo de texto. </p>
-            <p><strong>Sintaxis:</strong></p>
-            <pre>&lt;p&gt;Texto del parrafo&lt;/p&gt;</pre>
-            <p><strong>Uso adecuado:</strong> Para contener y mostrar bloques de texto en una página web.</p>
-            <p><strong>Buenas prácticas:</strong> Evitar usarlo para otros elementos no relacionados con texto.</p>
-
             <li>&lt;p&gt;</li>
             <p><strong>Definición:</strong> Define un párrafo.</p>
-            <p><strong>Ejemplo:</strong></p>
             <pre>&lt;p&gt;Este es un párrafo&lt;/p&gt;</pre>
-            <p>Resultado:</p>
-            <p>Este es un párrafo</p>
-        </ul>
-    
-        </article>
-    <hr>
+            <p>Ejemplo real:</p>
+            <p>Este es un párrafo en funcionamiento.</p>
 
-    </section>
-    <section id="listas">
+            <li>&lt;strong&gt;</li>
+            <p><strong>Definición:</strong> Indica texto importante.</p>
+            <pre>&lt;strong&gt;Importante&lt;/strong&gt;</pre>
+            <p><strong>Texto importante</strong></p>
+
+            <li>&lt;em&gt;</li>
+            <p><strong>Definición:</strong> Texto con énfasis.</p>
+            <pre>&lt;em&gt;Énfasis&lt;/em&gt;</pre>
+            <p><em>Texto con énfasis</em></p>
+        </ul>
+    </article>
+</section>
+
+
+<section id="listas">
     <h2>Listas</h2>
 
     <article>
         <h3>&lt;ul&gt;</h3>
-        <p><strong>Definición:</strong> Lista desordenada.</p>
         <pre>
 &lt;ul&gt;
-   &lt;li&gt;Elemento 1&lt;/li&gt;
-   &lt;li&gt;Elemento 2&lt;/li&gt;
+  &lt;li&gt;Elemento 1&lt;/li&gt;
+  &lt;li&gt;Elemento 2&lt;/li&gt;
 &lt;/ul&gt;
         </pre>
 
@@ -118,14 +112,20 @@
             <li>Elemento 1</li>
             <li>Elemento 2</li>
         </ul>
-    </article>
 
+        <h3>&lt;ol&gt;</h3>
+        <ol>
+            <li>Primero</li>
+            <li>Segundo</li>
+        </ol>
+    </article>
 </section>
+
 
 <section id="formularios">
     <h2>Formulario</h2>
 
-    <form>
+    <form id="formContacto">
         <fieldset>
             <legend>Contacto</legend>
 
@@ -135,19 +135,19 @@
             <label>Email:</label>
             <input type="email" required><br><br>
 
-            <label>Mensaje:</label>
-            <textarea></textarea><br><br>
+            <label>Mensaje:</label><br>
+            <textarea required></textarea><br><br>
 
             <button type="submit">Enviar</button>
         </fieldset>
     </form>
-
 </section>
+
 
 <section id="tablas">
     <h2>Tablas</h2>
 
-    <table border="1">
+    <table>
         <thead>
             <tr>
                 <th>Etiqueta</th>
@@ -159,27 +159,34 @@
                 <td>&lt;table&gt;</td>
                 <td>Crear tabla</td>
             </tr>
+            <tr>
+                <td>&lt;tr&gt;</td>
+                <td>Fila</td>
+            </tr>
+            <tr>
+                <td>&lt;td&gt;</td>
+                <td>Celda</td>
+            </tr>
         </tbody>
     </table>
-
 </section>
 
-<section id="multimedia">
-    <h2>Multimedia</h2>
 
-    <img src="https://via.placeholder.com/200" alt="Ejemplo imagen">
+<section class="video-final">
+    <h2>Video Explicativo de HTML</h2>
 
-    <audio controls>
-        <source src="audio.mp3" type="audio/mpeg">
-    </audio>
-
+    <video width="600" controls>
+        <source src="videoHtml.mp4" type="video/mp4">
+    </video>
 </section>
-    </main>
 
-    <footer>
-        <p> Blog Educativo de Etiquetas HTML</p>
-        </footer>
-        
+</main>
+
+<footer>
+    <p>Blog Educativo de Etiquetas HTML - 2026</p>
+</footer>
+
+<script src="./JS/script.js"></script>
 
 </body>
 </html>
