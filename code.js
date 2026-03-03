@@ -1,65 +1,56 @@
-document.addEventListener("DOMContentLoaded", function () {
+ document.addEventListener("DOMContentLoaded", function () {
+            const btnArriba = document.getElementById("btnArriba");
+            const botonModo = document.getElementById("botonModo");
 
-    const btnArriba = document.getElementById("btnArriba");
-    const botonModo = document.getElementById("modoOscuro");
-    const navbar = document.querySelector("nav");
-
-
-    window.addEventListener("scroll", function () {
-
-        if (window.scrollY > 200) {
-            btnArriba.classList.add("mostrar");
-        } else {
-            btnArriba.classList.remove("mostrar");
-        }
-
-        if (navbar) {
-            if (window.scrollY > 50) {
-                navbar.classList.add("nav-scroll");
-            } else {
-                navbar.classList.remove("nav-scroll");
+            // Función para actualizar el texto del botón según el modo
+            function actualizarTextoBoton() {
+                if (document.body.classList.contains("dark-mode")) {
+                    botonModo.textContent = "Modo Claro";
+                } else {
+                    botonModo.textContent = "Modo Oscuro";
+                }
             }
-        }
 
-    });
+            // Verificar si el modo oscuro estaba activo previamente
+            if (localStorage.getItem("modoOscuro") === "activo") {
+                document.body.classList.add("dark-mode");
+            }
 
-    if (btnArriba) {
-        btnArriba.addEventListener("click", function () {
-            window.scrollTo({
-                top: 0,
-                behavior: "smooth"
+            // Evento para cambiar entre el modo claro y oscuro
+            if (botonModo) {
+                actualizarTextoBoton(); // Llamamos a la función al inicio
+
+                botonModo.addEventListener("click", function () {
+                    document.body.classList.toggle("dark-mode");
+
+                    if (document.body.classList.contains("dark-mode")) {
+                        localStorage.setItem("modoOscuro", "activo");
+                    } else {
+                        localStorage.removeItem("modoOscuro");
+                    }
+
+                    actualizarTextoBoton();
+                });
+            }
+
+            // Evento de desplazamiento para mostrar/ocultar el botón de subir
+            window.addEventListener("scroll", function () {
+                if (window.scrollY > 200) {
+                    btnArriba.classList.add("mostrar");
+                    btnArriba.style.display = "block"; // Mostrar el botón cuando se hace scroll hacia abajo
+                } else {
+                    btnArriba.classList.remove("mostrar");
+                    btnArriba.style.display = "none"; // Ocultar el botón cuando se vuelve arriba
+                }
             });
-        });
-    }
 
-
-    function actualizarTextoBoton() {
-        if (document.body.classList.contains("dark-mode")) {
-            botonModo.textContent = "Modo Claro ☀️";
-        } else {
-            botonModo.textContent = "Modo Oscuro 🌙";
-        }
-    }
-
-    if (localStorage.getItem("modoOscuro") === "activo") {
-        document.body.classList.add("dark-mode");
-    }
-
-    if (botonModo) {
-        actualizarTextoBoton();
-
-        botonModo.addEventListener("click", function () {
-
-            document.body.classList.toggle("dark-mode");
-
-            if (document.body.classList.contains("dark-mode")) {
-                localStorage.setItem("modoOscuro", "activo");
-            } else {
-                localStorage.removeItem("modoOscuro");
+            // Evento para el botón "subir" cuando se hace clic
+            if (btnArriba) {
+                btnArriba.addEventListener("click", function () {
+                    window.scrollTo({
+                        top: 0,
+                        behavior: "smooth"
+                    });
+                });
             }
-
-            actualizarTextoBoton();
         });
-    }
-
-});
