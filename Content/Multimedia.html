@@ -1,0 +1,51 @@
+<section id="Multimedia">
+    <h2>Video Explicativo de HTML</h2>
+
+    <ul>
+        <div class="code-example">
+            <li class="item">&lt;audio&gt;</li>
+            <p><strong>Definición:</strong> La etiqueta <code>&lt;audio&gt;</code> se utiliza para incrustar contenido de audio en una página web. Permite reproducir archivos de audio como MP3, OGG, etc., y se puede controlar mediante los atributos <code>controls</code> (para mostrar los controles de reproducción), <code>autoplay</code> (para reproducir automáticamente) y <code>loop</code> (para repetir la reproducción).</p>
+             <audio controls>
+                <source src="../Assets/audio.mp3" type="audio/mp3">
+            </audio>
+        </div>
+
+        <div class="code-example">
+            <li class="item">&lt;video&gt;</li>
+            <p><strong>Definición:</strong> La etiqueta <code>&lt;video&gt;</code> se utiliza para incrustar contenido de video en una página web. Permite reproducir videos de formatos como MP4, WebM, Ogg, entre otros. Se puede controlar mediante los atributos <code>controls</code>, <code>autoplay</code>, <code>loop</code>, etc.</p>
+            <video controls>
+                <source src="../Assets/video.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <div class="code-example">
+            <li class="item">&lt;source&gt;</li>
+            <p><strong>Definición:</strong> La etiqueta <code>&lt;source&gt;</code> se utiliza dentro de las etiquetas <code>&lt;audio&gt;</code> y <code>&lt;video&gt;</code> para especificar los archivos de medios que se van a reproducir, permitiendo el uso de diferentes formatos según el navegador.</p>
+        </div>
+
+        <div class="code-example">
+            <li class="item">&lt;track&gt;</li>
+            <p><strong>Definición:</strong> La etiqueta <code>&lt;track&gt;</code> se usa dentro de la etiqueta <code>&lt;video&gt;</code> o <code>&lt;audio&gt;</code> para especificar subtítulos, descripciones o transcripciones. Se usa con el atributo <code>kind</code> para definir el tipo de pista (por ejemplo, "subtitles", "captions", "descriptions").</p>
+        </div>
+
+        <div class="code-example">
+            <li class="item">&lt;embed&gt;</li>
+            <p><strong>Definición:</strong> La etiqueta <code>&lt;embed&gt;</code> se utiliza para incrustar contenido externo, como archivos multimedia (por ejemplo, Flash, PDF o cualquier archivo de audio o video) en una página web. Se puede especificar el tipo de contenido con el atributo <code>type</code>.</p>
+        </div>
+
+        <div class="code-example">
+            <li class="item">&lt;object&gt;</li>
+            <p><strong>Definición:</strong> La etiqueta <code>&lt;object&gt;</code> se utiliza para incrustar objetos multimedia en una página web, como videos, animaciones o archivos interactivos. Puede ser utilizada en combinación con <code>data</code> o <code>type</code> para especificar el archivo multimedia y su tipo.</p>
+        </div>
+
+        <div class="code-example">
+            <li class="item">&lt;iframe&gt;</li>
+            <p><strong>Definición:</strong> La etiqueta <code>&lt;iframe&gt;</code> se utiliza para incrustar otro documento HTML dentro de la página actual. Aunque no es estrictamente para multimedia, se usa comúnmente para incrustar videos de plataformas como YouTube, Vimeo, etc., utilizando un <code>src</code> que apunte al URL del video.</p>
+        </div>
+
+        <pre>&lt;audio controls&gt;<br>  &lt;source src="audio.mp3" type="audio/mp3"&gt;<br>  &lt;source src="audio.ogg" type="audio/ogg"&gt;<br>  Tu navegador no soporta el elemento audio.<br>&lt;/audio&gt;</pre>
+        <pre>&lt;video controls&gt;<br>  &lt;source src="video.mp4" type="video/mp4"&gt;<br>  &lt;source src="video.ogg" type="video/ogg"&gt;<br>  Tu navegador no soporta el elemento video.<br>&lt;/video&gt;</pre>
+    </ul>
+
+   
+</section>

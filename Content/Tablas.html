@@ -1,0 +1,124 @@
+  <style>
+        .editor-input {
+            width: 98%;
+            height: 500px;
+            padding: 10px;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            border: 1px solid #ccc;
+            margin-bottom: 20px;
+            white-space: pre-wrap;
+        }
+
+        .preview-output {
+            padding: 10px;
+            border: 1px solid #ccc;
+            min-height: 100px;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            white-space: pre-wrap;
+        }
+    </style>
+<section id="tablas">
+    <h2>Tablas</h2>         
+    <ul>
+        <div class="code-example">
+            <li class="item">&lt;table&gt;</li>
+            <p><strong>Definición:</strong> La etiqueta <code>&lt;table&gt;</code> se utiliza para crear una tabla en HTML. Es el contenedor principal de todos los elementos de la tabla, como las filas y celdas.</p>
+        </div>
+
+        <div class="code-example">
+            <li class="item">&lt;tr&gt;</li>
+            <p><strong>Definición:</strong> La etiqueta <code>&lt;tr&gt;</code> define una fila dentro de una tabla. Cada fila puede contener varias celdas definidas por las etiquetas <code>&lt;td&gt;</code> o <code>&lt;th&gt;</code>.</p>
+        </div>
+
+        <div class="code-example">
+            <li class="item">&lt;th&gt;</li>
+            <p><strong>Definición:</strong> La etiqueta <code>&lt;th&gt;</code> define una celda de encabezado dentro de una fila. El contenido de las celdas <code>&lt;th&gt;</code> se muestra generalmente en negrita y centrado, y se utiliza para describir el contenido de las columnas o filas.</p>
+        </div>
+
+        <div class="code-example">
+            <li class="item">&lt;td&gt;</li>
+            <p><strong>Definición:</strong> La etiqueta <code>&lt;td&gt;</code> define una celda dentro de una fila de la tabla. Contiene los datos de la tabla y puede contener texto, imágenes, enlaces, etc.</p>
+        </div>
+
+        <div class="code-example">
+            <li class="item">&lt;caption&gt;</li>
+            <p><strong>Definición:</strong> La etiqueta <code>&lt;caption&gt;</code> se utiliza para agregar un título o descripción a la tabla. Se coloca directamente después de la etiqueta <code>&lt;table&gt;</code>.</p>
+        </div>
+
+        <div class="code-example">
+            <li class="item">&lt;thead&gt;</li>
+            <p><strong>Definición:</strong> La etiqueta <code>&lt;thead&gt;</code> agrupa las filas del encabezado de una tabla. Contiene una o más filas de encabezado (<code>&lt;tr&gt;</code>) que generalmente incluyen celdas de encabezado (<code>&lt;th&gt;</code>).</p>
+        </div>
+
+        <div class="code-example">
+            <li class="item">&lt;tbody&gt;</li>
+            <p><strong>Definición:</strong> La etiqueta <code>&lt;tbody&gt;</code> agrupa el contenido principal de la tabla, es decir, las filas de datos (<code>&lt;tr&gt;</code>) que contienen celdas de datos (<code>&lt;td&gt;</code>).</p>
+        </div>
+
+        <div class="code-example">
+            <li class="item">&lt;tfoot&gt;</li>
+            <p><strong>Definición:</strong> La etiqueta <code>&lt;tfoot&gt;</code> agrupa las filas de pie de la tabla. Normalmente se utiliza para contener resúmenes o totales de las columnas.</p>
+        </div>
+
+        <div class="code-example">
+            <li class="item">&lt;col&gt;</li>
+            <p><strong>Definición:</strong> La etiqueta <code>&lt;col&gt;</code> se utiliza para definir propiedades de estilo para columnas dentro de la tabla. Se puede usar para aplicar estilos como colores de fondo a columnas específicas.</p>
+        </div>
+
+        <div class="code-example">
+            <li class="item">&lt;colgroup&gt;</li>
+            <p><strong>Definición:</strong> La etiqueta <code>&lt;colgroup&gt;</code> agrupa las columnas dentro de una tabla. Se utiliza en conjunto con <code>&lt;col&gt;</code> para aplicar estilos o propiedades a un grupo de columnas.</p>
+        </div>
+
+        <pre>&lt;table&gt;<br>     &lt;caption&gt;Ejemplo de Tabla&lt;/caption&gt;<br>     &lt;thead&gt;<br>         &lt;tr&gt;<br>             &lt;th&gt;Encabezado 1&lt;/th&gt;<br>             &lt;th&gt;Encabezado 2&lt;/th&gt;<br>         &lt;/tr&gt;<br>     &lt;/thead&gt;<br>     &lt;tbody&gt;<br>         &lt;tr&gt;<br>             &lt;td&gt;Dato 1&lt;/td&gt;<br>             &lt;td&gt;Dato 2&lt;/td&gt;<br>         &lt;/tr&gt;<br>     &lt;/tbody&gt;<br>&lt;/table&gt;</pre>
+
+    </ul>
+    <div class="code-example">
+  <textarea class="editor-input" id="editor-input">&lt;table&gt;
+    &lt;caption&gt;Tabla de Ejemplo: Ventas Mensuales&lt;/caption&gt;
+    
+    &lt;thead&gt;
+        &lt;tr&gt;
+            &lt;th&gt;Mes&lt;/th&gt;
+            &lt;th&gt;Ventas&lt;/th&gt;
+            &lt;th&gt;Gastos&lt;/th&gt;
+            &lt;th&gt;Beneficio&lt;/th&gt;
+        &lt;/tr&gt;
+    &lt;/thead&gt;
+    
+    &lt;tbody&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Enero&lt;/td&gt;
+            &lt;td&gt;$10,000&lt;/td&gt;
+            &lt;td&gt;$5,000&lt;/td&gt;
+            &lt;td&gt;$5,000&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Febrero&lt;/td&gt;
+            &lt;td&gt;$12,000&lt;/td&gt;
+            &lt;td&gt;$6,500&lt;/td&gt;
+            &lt;td&gt;$5,500&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Marzo&lt;/td&gt;
+            &lt;td&gt;$15,000&lt;/td&gt;
+            &lt;td&gt;$7,000&lt;/td&gt;
+            &lt;td&gt;$8,000&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
+    
+    &lt;tfoot&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Total&lt;/td&gt;
+            &lt;td&gt;$37,000&lt;/td&gt;
+            &lt;td&gt;$18,500&lt;/td&gt;
+            &lt;td&gt;$18,500&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tfoot&gt;
+&lt;/table&gt;</textarea>
+<div class="preview-output" id="preview-output"></div>
+    </div>
+
+    </section>

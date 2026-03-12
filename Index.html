@@ -5,184 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog Educativo - Etiquetas HTML</title>
     <link rel="stylesheet" href="./Style/Style.css">
-    <script src="code.js"></script>
+    <script src="./Js/Links.js"></script>
+    <script src="./Js/Scripts.js"></script>
 </head>
 
-<body>
+<body>    
+<div id="header-placeholder"></div>
 
-    
+<main id="main-content">
 
-<header>
-    <img src="./Assets/imagen sena.png sena.png" alt="Logo SENA" class="logo">
-    <div class="encabezado">
-        
-        <h1 id="title">Blog Educativo de Etiquetas HTML</h1>
-    </div>
-    <button id="btnArriba">↑</button>
-
-    <button id="botonModo">Modo Oscuro</button>
-
-    <nav>
-        <a href="#estructurales">Estructurales</a>
-        <a href="#texto">Texto</a>
-        <a href="#listas">Listas</a>
-        <a href="#formularios">Formularios</a>
-        <a href="#tablas">Tablas</a>
-        <a href="#video-final">Video</a>
-    </nav>
-
-    <!-- <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrD8d0U_P6ljku70Bef-bj2zwlU9coOd4Cbw&s" alt="Imagen HTML" width="200"> -->
-
-    <p id="intro">
-        En este blog vamos a evidenciar algunas de las etiquetas más importantes que tenemos en HTML,
-        organizadas por categorías para facilitar su comprensión.
-    </p>
-
-</header>
-
-<main>
-
-
-<section id="estructurales">
-    <h2>Etiquetas Estructurales</h2>
-
-    <article>
-        <ul>
-            <li>&lt;html&gt;</li>
-            <p><strong>Definición:</strong> Define el inicio y final de un documento HTML.</p>
-            <pre>&lt;html&gt;Contenido&lt;/html&gt;</pre>
-
-            <li>&lt;header&gt;</li>
-            <p><strong>Definición:</strong> Define la cabecera de una página o sección.</p>
-            <pre>&lt;header&gt;Contenido&lt;/header&gt;</pre>
-
-            <li>&lt;body&gt;</li>
-            <p><strong>Definición:</strong> Contiene todo el contenido visible.</p>
-            <pre>&lt;body&gt;Contenido visible&lt;/body&gt;</pre>
-
-            <li>&lt;main&gt;</li>
-            <p><strong>Definición:</strong> Contenido principal del documento.</p>
-            <pre>&lt;main&gt;Contenido principal&lt;/main&gt;</pre>
-
-            <li>&lt;footer&gt;</li>
-            <p><strong>Definición:</strong> Pie de página.</p>
-            <pre>&lt;footer&gt;Pie&lt;/footer&gt;</pre>
-        </ul>
-    </article>
-</section>
-
-
-<section id="texto">
-    <h2>Etiquetas de Texto</h2>
-
-    <article>
-        <ul>
-            <li>&lt;p&gt;</li>
-            <p><strong>Definición:</strong> Define un párrafo.</p>
-            <pre>&lt;p&gt;Este es un párrafo&lt;/p&gt;</pre>
-            <p>Ejemplo real:</p>
-            <p>Este es un párrafo en funcionamiento.</p>
-
-            <li>&lt;strong&gt;</li>
-            <p><strong>Definición:</strong> Indica texto importante.</p>
-            <pre>&lt;strong&gt;Importante&lt;/strong&gt;</pre>
-            <p><strong>Texto importante</strong></p>
-
-            <li>&lt;em&gt;</li>
-            <p><strong>Definición:</strong> Texto con énfasis.</p>
-            <pre>&lt;em&gt;Énfasis&lt;/em&gt;</pre>
-            <p><em>Texto con énfasis</em></p>
-        </ul>
-    </article>
-</section>
-
-
-<section id="listas">
-    <h2>Listas</h2>
-
-    <article>
-        <h3>&lt;ul&gt;</h3>
-        <pre>
-&lt;ul&gt;
-  &lt;li&gt;Elemento 1&lt;/li&gt;
-  &lt;li&gt;Elemento 2&lt;/li&gt;
-&lt;/ul&gt;
-        </pre>
-
-        <ul>
-            <li>Elemento 1</li>
-            <li>Elemento 2</li>
-        </ul>
-
-        <h3>&lt;ol&gt;</h3>
-        <ol>
-            <li>Primero</li>
-            <li>Segundo</li>
-        </ol>
-    </article>
-</section>
-
-
-<section id="formularios">
-    <h2>Formulario</h2>
-
-    <form id="formContacto">
-        <fieldset>
-            <legend>Contacto</legend>
-
-            <label>Nombre:</label>
-            <input type="text" required><br><br>
-
-            <label>Email:</label>
-            <input type="email" required><br><br>
-
-            <label>Mensaje:</label><br>
-            <textarea required></textarea><br><br>
-
-            <button type="submit">Enviar</button>
-        </fieldset>
-    </form>
-</section>
-
-
-<section id="tablas">
-    <h2>Tablas</h2>         
-
-    <table>
-        <thead>
-            <tr>
-                <th>Etiqueta</th>
-                <th>Función</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>&lt;table&gt;</td>
-                <td>Crear tabla</td>
-            </tr>
-            <tr>
-                <td>&lt;tr&gt;</td>
-                <td>Fila</td>
-            </tr>
-            <tr>
-                <td>&lt;td&gt;</td>
-                <td>Celda</td>
-            </tr>
-        </tbody>
-    </table>
-
+    <section>
+        <p id="intro">
+            En este blog vamos a evidenciar algunas de las etiquetas más importantes que tenemos en HTML,
+            organizadas por categorías para facilitar su comprensión.
+        </p>
     </section>
 
-
-
-<section id="video-final">
-    <h2>Video Explicativo de HTML</h2>
-
-    <a href="https://www.youtube.com/watch?v=BGj1mD9Eoe4" target="_blank">Ver video en YouTube</a></section>
 </main>
 
 <footer>
     <p>Blog Educativo de Etiquetas HTML - 2026</p>
+    <strong>Juan Esteban Ome - Maria de los Angeles Olaya</strong>
 </footer>
 
 

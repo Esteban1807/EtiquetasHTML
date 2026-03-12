@@ -129,8 +129,8 @@ form {
     border-radius: 15px;
 }
 
-input, textarea {
-    width: 100%;
+input, textarea, select {
+    width: 98%;
     padding: 8px;
     border-radius: 8px;
     border: 1px solid #ccc;
@@ -161,7 +161,7 @@ footer {
 }
 
 
-#btnArriba {
+#btnArriba, #btnVolver {
             position: fixed;
             bottom: 20px;
             right: 20px;
@@ -175,7 +175,7 @@ footer {
         }
 
 
-#btnArriba:hover {
+#btnArriba:hover, #btnVolver:hover {
             background-color: #45a049;
         }
 
@@ -196,7 +196,8 @@ footer {
 }
 
 .dark-mode nav a:hover {
-    background-color: #ff4d00;
+    background-color: #ffffff;
+    color: #000;
 }
 
 .dark-mode header {
